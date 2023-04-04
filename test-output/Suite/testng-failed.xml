@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="OrangeHRMTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="TestClssesPackage.DashboardTestClass">
+        <methods>
+          <include name="VerifyTabsPresentOnDashBoardPage"/>
+          <include name="afterTest"/>
+          <include name="beforeClass"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- TestClssesPackage.DashboardTestClass -->
+      <class name="TestClssesPackage.AdminPageTest">
+        <methods>
+          <include name="VerifyAdminPage"/>
+          <include name="afterTest"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- TestClssesPackage.AdminPageTest -->
+      <class name="TestClssesPackage.LoginPageTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="VerifyLoginPageWithInvalidInput"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="VerifyLoginPageWithValidInput"/>
+        </methods>
+      </class> <!-- TestClssesPackage.LoginPageTest -->
+      <class name="TestClssesPackage.BaseClass">
+        <methods>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- TestClssesPackage.BaseClass -->
+    </classes>
+  </test> <!-- OrangeHRMTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
